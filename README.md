@@ -13,7 +13,7 @@
 - Member 2: [SWATHY NAIR A S] - [LBSIW]
 
 ### Hosted Project Link
-[mention your project hosted link here]
+[https://tink-her-hack-temp-beryl.vercel.app/]
 
 ### Project Description
 [OUR APP PROVIDES STUDENTS WITH ONE TAP GIGS ]
