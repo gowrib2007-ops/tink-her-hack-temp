@@ -1,0 +1,162 @@
+
+// Screen Change
+
+function goToVerify(){
+  startScreen.classList.add("hidden");
+  verifyScreen.classList.remove("hidden");
+}
+
+
+// User Type
+
+userType.addEventListener("change", () => {
+
+  studentBox.classList.add("hidden");
+  employerBox.classList.add("hidden");
+
+  if(userType.value === "student"){
+    studentBox.classList.remove("hidden");
+  }
+
+  if(userType.value === "employer"){
+    employerBox.classList.remove("hidden");
+  }
+
+});
+
+
+// Verify
+
+function verify(){
+
+  if(userType.value === "" || email.value === ""){
+    alert("Fill all fields");
+    return;
+  }
+
+  if(userType.value === "student"){
+    if(collegeId.value === "" || noc.value === ""){
+      alert("Complete Student Details");
+      return;
+    }
+  }
+
+  if(userType.value === "employer"){
+    if(kyc.value === ""){
+      alert("Upload KYC");
+      return;
+    }
+  }
+
+  verifyScreen.classList.add("hidden");
+  dashboard.classList.remove("hidden");
+}
+
+
+// ONE JOB ONLY
+
+const jobs = document.querySelectorAll("input[name='job']");
+
+jobs.forEach(job => {
+
+  job.addEventListener("change", function(){
+
+    if(this.checked){
+
+      jobs.forEach(j => {
+        if(j !== this){
+          j.checked = false;
+        }
+      });
+
+    }
+
+  });
+
+});
+
+
+// Lock Job
+
+function lockJob(){
+
+  let selected = false;
+
+  jobs.forEach(job => {
+    if(job.checked){
+      selected = true;
+    }
+  });
+
+  if(!selected){
+    alert("Select one job first!");
+    return;
+  }
+
+  alert("Job Locked Successfully!");
+}
+
+
+// ================= CHATBOT =================
+
+function sendMessage(){
+
+  let input = userInput.value.trim();
+  if(input === "") return;
+
+  addMessage("You", input);
+
+  let reply = getBotReply(input);
+
+  setTimeout(() => {
+    addMessage("Bot", reply);
+  }, 500);
+
+  userInput.value = "";
+}
+
+
+// Add Message
+
+function addMessage(sender, text){
+
+  let chat = document.getElementById("chatBox");
+
+  let msg = document.createElement("div");
+
+  msg.innerHTML = "<b>" + sender + ":</b> " + text;
+
+  chat.appendChild(msg);
+
+  chat.scrollTop = chat.scrollHeight;
+}
+
+
+// Simple AI Logic
+
+function getBotReply(msg){
+
+  msg = msg.toLowerCase();
+
+  if(msg.includes("job")){
+    return "You can select Campus, Local, or Online jobs.";
+  }
+
+  if(msg.includes("skill")){
+    return "Skill-based jobs include content making and tutoring.";
+  }
+
+  if(msg.includes("payment")){
+    return "Payments are protected and email is visible.";
+  }
+
+  if(msg.includes("lock")){
+    return "You can lock only one job at a time.";
+  }
+
+  if(msg.includes("help")){
+    return "I am here to help you choose the right job.";
+  }
+
+  return "Please ask about jobs, skills, payment, or locking.";
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BRAINYGIGZ</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- START SCREEN -->
+<div id="startScreen">
+
+  <h1>BRAINYGIGZ</h1>
+  <p>Smart Part-Time Jobs for Students</p>
+
+  <div class="arrow" onclick="goToVerify()">⬇</div>
+
+</div>
+
+
+<!-- VERIFICATION SCREEN -->
+<div id="verifyScreen" class="hidden">
+
+  <h2>Verification</h2>
+
+  <select id="userType">
+    <option value="">Select User Type</option>
+    <option value="student">Student</option>
+    <option value="employer">Employer</option>
+  </select>
+
+
+  <div id="studentBox" class="hidden">
+    <input type="text" id="collegeId" placeholder="College ID">
+    <label>Upload NOC</label>
+    <input type="file" id="noc">
+  </div>
+
+
+  <div id="employerBox" class="hidden">
+    <label>Upload KYC</label>
+    <input type="file" id="kyc">
+  </div>
+
+
+  <input type="email" id="email" placeholder="Email">
+
+  <button onclick="verify()">Verify</button>
+
+</div>
+
+
+<!-- DASHBOARD -->
+<div id="dashboard" class="hidden">
+
+<h2>📌 Pinboard (Urgent Jobs)</h2>
+
+<div id="pinboard">
+
+  <div class="pin">Assignment Due Today</div>
+  <div class="pin">Event Volunteer Needed</div>
+  <div class="pin">Lab Helper Tomorrow</div>
+
+</div>
+
+
+<h2>Select Job Category</h2>
+
+<div class="jobSection">
+
+<!-- CAMPUS -->
+<div class="box">
+<h3>Campus Jobs</h3>
+
+<label><input type="checkbox" name="job"> Event Management</label>
+<label><input type="checkbox" name="job"> Lab Helper</label>
+<label><input type="checkbox" name="job"> Exam Volunteer</label>
+
+</div>
+
+
+<!-- LOCAL -->
+<div class="box">
+<h3>Local Jobs</h3>
+
+<label><input type="checkbox" name="job"> Helper Work</label>
+<label><input type="checkbox" name="job"> Delivery Task</label>
+<label><input type="checkbox" name="job"> Assignment Writing</label>
+
+</div>
+
+
+<!-- ONLINE -->
+<div class="box">
+<h3>Online Jobs</h3>
+
+<label><input type="checkbox" name="job"> Doubt Solving</label>
+<label><input type="checkbox" name="job"> Online Tutoring</label>
+<label><input type="checkbox" name="job"> Content Making</label>
+
+</div>
+
+</div>
+
+
+<button onclick="lockJob()">Lock Selected Job</button>
+
+
+<!-- CHATBOT -->
+<h2>🤖 AI Chatbot</h2>
+
+<div id="chatbot">
+
+  <div id="chatBox"></div>
+
+  <input type="text" id="userInput" placeholder="Ask me anything...">
+  <button onclick="sendMessage()">Send</button>
+
+</div>
+
+
+</div>
+
+
+<script src="script.js.txt"></script>
+</body>
+</html>
