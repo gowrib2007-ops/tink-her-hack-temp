@@ -2,27 +2,29 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# [BRAINY GIGZ] 🎯
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: [GOWRI]
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: [GOWRI B] - [LBSITW]
+- Member 2: [SWATHY NAIR A S] - [LBSIW]
 
 ### Hosted Project Link
 [mention your project hosted link here]
 
 ### Project Description
-[2-3 lines about what your project does]
+[OUR APP PROVIDES STUDENTS WITH ONE TAP GIGS ]
 
 ### The Problem statement
-[What problem are you solving?]
+[MONEY IS THE BASIC PROBLEM EVERY STUDENT FACE. SOMETIMES THERE ARE LIMIT FOR CHILDREN TO COMPLETELY RELY ON PARENTS FOR MONEY.BUT AS STUDENTS WE WONT FIND RELIABLE JOBS WITHIN PARTICULAR TIME LIMIT]
 
 ### The Solution
-[How are you solving it?]
+TO RECTIFY THIS SITUATION, WE DEVELPED A WEBSITE "BRAINYGIGZ"] WHERE THE TARGET AUDIENCE ARE OF AGE GROUP 18-25.
+HERE THEY CAN ACCESS ACCORDING TO THEIR REQUIRMENTS
+
 
 ---
 
@@ -31,10 +33,10 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+- Languages used: [HTML,JAVA SCRIPT,CSS]
+- Frameworks used: [ React, Django, Spring Boot]
+- Libraries used: [ axios, pandas, JUnit]
+- Tools used: [ CODE PEN, GIT, NOTE PAD]
 
 **For Hardware:**
 - Main components: [List main components]
@@ -46,10 +48,10 @@
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+- Feature 1: [VERIFICATION PROCESS]
+- Feature 2: [PIN BOARD FACILITY]
+- Feature 3: [JOB SELECTION]
+- Feature 4: [AI CHATBOT]
 
 ---
 
